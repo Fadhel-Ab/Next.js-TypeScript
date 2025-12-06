@@ -8,6 +8,7 @@ type ToggleProps = {
 export default function Toggle({ checked, onChange }: ToggleProps) {
   return (
     <button
+        type="button"// remove if its not inside a form
       onClick={() => onChange(!checked)}
       className={`
         relative inline-flex h-6 w-11 items-center rounded-full transition
